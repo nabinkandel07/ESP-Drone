@@ -215,12 +215,12 @@ Before launching the drone, perform the following checks to ensure safety and fu
 3. Use cfclient to confirm that the drone’s sensors detect a level orientation.
 4. After establishing a connection (via app or cfclient), check that the drone’s tail LED blinks **fast green** (indicates normal operation).
 5. Verify that the drone’s head LED is not blinking **red** (red blinking indicates low battery—recharge before flight).
-
-
-## sources 
-https://www.youtube.com/watch?v=V_mZsiZcy7s
-https://docs.espressif.com/projects/espressif-esp-drone/en/latest/gettingstarted.html#main-features
-https://github.com/jobitjoseph/ESP32-Flight-controller-
 6. Test thrust response: Gently slide the thrust controller (left side of the app or cfclient) upward to ensure the motors activate smoothly.
 7. Test direction control: Move the roll/pitch joystick (right side of the app or cfclient) to confirm the drone’s motors adjust correctly to change direction.
 8. Once all checks are passed, the drone is ready for flight. Enjoy!
+
+
+## sources 
+**https://www.youtube.com/watch?v=V_mZsiZcy7s**
+**https://docs.espressif.com/projects/espressif-esp-drone/en/latest/gettingstarted.html#main-features**
+**https://github.com/jobitjoseph/ESP32-Flight-controller-**
