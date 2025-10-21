@@ -239,5 +239,7 @@ Before launching the drone, perform the following checks to ensure safety and fu
 
 ## sources 
 **https://www.youtube.com/watch?v=V_mZsiZcy7s**
+
 **https://docs.espressif.com/projects/espressif-esp-drone/en/latest/gettingstarted.html#main-features**
+
 **https://github.com/jobitjoseph/ESP32-Flight-controller-**
