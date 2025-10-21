@@ -1,6 +1,7 @@
 
 ## ESP-Drone Overview
 ESP-Drone is a flying development board developed by Espressif, based on the ESP32/ESP32-S2/ESP32-S3 microcontrollers. Equipped with core Wi-Fi capabilities, this drone can connect to and be controlled by a mobile app or gamepad via a Wi-Fi network. It features a simplified hardware structure, clear and readable code, and supports functional expansion—making it an ideal choice for STEAM education. A portion of its code is derived from the Crazyflie open-source project, which is licensed under GPL3.0.
+<img width="1460" height="526" alt="image" src="https://github.com/user-attachments/assets/ffccb746-0280-496c-9c7b-af5ab1f201d2" />
 
 ## Main Features
 ESP-Drone offers the following key functionalities:
@@ -37,12 +38,16 @@ Crazyflie is an open-source quadcopter developed by Bitcraze, with the following
 - Includes a full-featured custom client (cfclient) and the CRTP (Crazyflie Real-Time Protocol) for debugging, data logging, and control.
 
 ![A swarm of drones exploring the environment, avoiding obstacles and each other. (Guus Schoonewille, TU Delft)](crazyflie-overview)
+<img width="1016" height="469" alt="image" src="https://github.com/user-attachments/assets/8f4a4b8b-0adb-45a9-9269-cdde1d38148b" />
+
 
 For more information, visit the [Crazyflie official website](https://www.bitcraze.io/crazyflie/).
 
 # Preparations
 ## Assemble Hardware
 Follow the steps below to assemble the ESP32-S2-Drone V1.2. For a detailed hardware overview and pinout diagram, refer to the [Hardware Reference](https://docs.espressif.com/projects/esp-drone/en/latest/hardware-reference/index.html).
+<img width="1762" height="732" alt="image" src="https://github.com/user-attachments/assets/60204aa0-ab71-44da-8b0c-441fca31c886" />
+
 
 ### ESP32-S2-Drone V1.2 Assembly Flow
 1. Attach the motors to the drone frame, ensuring they are securely fastened.
@@ -55,7 +60,8 @@ Follow the steps below to assemble the ESP32-S2-Drone V1.2. For a detailed hardw
 ## Download and Install ESP-Drone App
 The ESP-Drone app is available for both Android and iOS devices:
 - **Android**: Scan the QR code below to download the app directly.  
-  ![Android APP QR Code](Android APP QR)
+  <img width="280" height="280" alt="image" src="https://github.com/user-attachments/assets/9defa966-3e3a-4eb1-bb02-2cafac528bcb" />
+
 - **iOS**: Search for "ESP-Drone" in the App Store and download the application.
 
 ### App Source Code
@@ -65,7 +71,8 @@ The ESP-Drone app is available for both Android and iOS devices:
 ## Install cfclient (Optional)
 This step is only required for advanced debugging and configuration. cfclient is a PC-based client tool for controlling and debugging the drone.
 
-![cfclient Interface](cfclient Interface)
+<img width="644" height="497" alt="image" src="https://github.com/user-attachments/assets/b50eb8f3-d5e9-40e5-b14f-253a998a2c41" />
+
 
 ### 1. Install cfclient
 #### 1.1 Download the source code
@@ -86,7 +93,8 @@ cfclient
 ```
 
 ### 2. Configure Controllers
-![Controller Configuration](Controller Configuration)
+<img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/0990d384-cc52-4a52-b8c4-7e96637f560b" />
+
 #### 2.1 Map the four core control channels:
 - **Roll**: Controls the drone’s left/right tilt.
 - **Pitch**: Controls the drone’s forward/backward tilt.
@@ -135,13 +143,16 @@ App Settings
    - **Left joystick**: Adjusts thrust (up/down) and yaw (left/right turn).
    - **Right joystick**: Controls roll (left/right) and pitch (forward/backward).
 
-![Android APP Interface](Android APP Interface)
+<img width="1879" height="970" alt="image" src="https://github.com/user-attachments/assets/797b7404-061d-4534-90cd-1b7bbc4c9e1e" />
+
 
 # PC cfclient Guide
 cfclient is a PC-based client tool originally developed for the Crazyflie project. It fully implements the CRTP protocol, enabling fast debugging and control of the drone. ESP-Drone has customized cfclient to align with its functional requirements.
 
-![cfclient Architecture](cfclient architecture)
-![cfclient Console Interface](cfclient console interface)
+<img width="700" height="392" alt="image" src="https://github.com/user-attachments/assets/77596a3a-587e-4ff8-a109-f944c317b210" />
+
+<img width="644" height="497" alt="image" src="https://github.com/user-attachments/assets/6b0f87e7-ec21-467f-85dc-514477d30c6e" />
+
 
 The project uses JSON files to store configuration and cache data. For detailed configuration instructions, refer to the [User Configuration File](https://docs.espressif.com/projects/esp-drone/en/latest/software-reference/user-configuration-file.html).
 
@@ -174,7 +185,8 @@ The project uses JSON files to store configuration and cache data. For detailed 
 ## Configure Input Device
 Follow the on-screen prompts in cfclient to map your controller’s channels to the drone’s control functions (Roll, Pitch, Yaw, Thrust).
 
-![cfclient Input Device Configuration](cfclient input device configuration)
+<img width="956" height="542" alt="image" src="https://github.com/user-attachments/assets/847dcbf3-a088-4c18-8fa5-d3f625ac07d2" />
+
 
 ## Flight Data Monitoring
 In the "Flight Control" tab of cfclient, you can view real-time drone status. Detailed data is displayed in the bottom-right corner, including:
@@ -186,7 +198,8 @@ In the "Flight Control" tab of cfclient, you can view real-time drone status. De
 ## Tune Online Parameters
 cfclient allows real-time adjustment of PID (Proportional-Integral-Derivative) parameters for flight optimization.
 
-![cfclient PID Parameters Tunning](PID parameters tunning)
+<img width="1379" height="1050" alt="image" src="https://github.com/user-attachments/assets/c0b69769-99c3-4c5a-8b24-c9eb5b0ab9fa" />
+
 
 ### Notes
 1. Modified parameters take effect immediately, eliminating the need for frequent firmware flashing.
@@ -195,16 +208,20 @@ cfclient allows real-time adjustment of PID (Proportional-Integral-Derivative) p
 
 ## Monitor Flight Data
 1. Configure log parameters in the "Log Configuration" and "Log Blocks" tabs to select which data to record (e.g., gyroscope, accelerometer, or sensor readings).
-   ![Log Configuration](Log Configuration)
-   ![Log Blocks](Log Blocks)
+  <img width="929" height="736" alt="image" src="https://github.com/user-attachments/assets/a9e8516b-e47f-4f91-a929-b63c53531f55" />
+
+  <img width="1060" height="594" alt="image" src="https://github.com/user-attachments/assets/208f1a61-6f29-44d8-bf0c-a3b9e56c09f7" />
+
 2. Use the "Plotter" tab to visualize real-time data as waveforms, enabling you to monitor gyroscope and accelerometer performance.
 
-![Accelerometer Logging](accelerometer logging)
+<img width="1375" height="1015" alt="image" src="https://github.com/user-attachments/assets/d34bb528-d627-4388-96d1-ee60fb785815" />
+
 
 # Propeller Direction
 Install A-type and B-type propellers according to the diagram below. Ensure the propellers are securely attached and rotate in the correct direction. During power-on self-test, verify that all propellers spin smoothly and in the correct orientation (as indicated by the drone’s documentation).
 
-![Propeller Check](Propeller Check)
+<img width="500" height="498" alt="image" src="https://github.com/user-attachments/assets/c2e16d37-66e4-4324-a360-f9bb4f7b0335" />
+
 
 > Note: Incorrect propeller installation will cause the drone to lose stability or fail to take off.
 
