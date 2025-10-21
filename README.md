@@ -1,3 +1,4 @@
+<img width="4138" height="3176" alt="ESP32 drone Schematics" src="https://github.com/user-attachments/assets/f5d93c8f-0216-4b3e-a812-4d2bc00ab884" />
 
 ## ESP-Drone Overview
 ESP-Drone is a flying development board developed by Espressif, based on the ESP32/ESP32-S2/ESP32-S3 microcontrollers. Equipped with core Wi-Fi capabilities, this drone can connect to and be controlled by a mobile app or gamepad via a Wi-Fi network. It features a simplified hardware structure, clear and readable code, and supports functional expansion—making it an ideal choice for STEAM education. A portion of its code is derived from the Crazyflie open-source project, which is licensed under GPL3.0.
